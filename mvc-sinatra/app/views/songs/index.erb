@@ -1,0 +1,11 @@
+<h1>I am the songs index view</h1>
+
+<ol>
+<% @songs.each do |song| %>
+  <li>
+    <a href="/songs/<%= song.id %>">
+      <%= song.name %>
+    </a>
+  </li>
+<% end %>
+</ol>
